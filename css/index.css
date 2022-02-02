@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&display=swap");
+:root {
+  --first-color: #ff9a3c;
+  --second-color: #e3e3e3;
+  --third-color: #455d7a;
+}
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+/* Logo */
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar li {
+  list-style-type: none;
+  padding: 0px 20px;
+  position: relative;
+}
+.navbar li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+  transition: 0.3 ease;
+}
+.navbar li a:hover {
+  color: var(--first-color);
+}
+.navbar li a:hover,
+.navbar li a.active {
+  color: var(--first-color);
+}
+.navbar li a.active::after,
+.navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: var(--first-color);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+/* Home Page */
+.hero {
+  background-image: url(/images/ZVFashionLogo.jpg);
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 0%;
+  background-size: cover;
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero h4 {
+  padding-top: 15px;
+}
+.hero h1 {
+  color: var(--second-color);
+}
+.hero button {
+  background-color: var(--third-color);
+  color: var(--second-color);
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
