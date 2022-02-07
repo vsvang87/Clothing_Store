@@ -18,6 +18,18 @@ body {
   height: 80px;
   border-radius: 50px;
 }
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: var(--third-color);
+  background-color: var(--second-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3 ease;
+}
 
 /* Header */
 .header {
@@ -89,8 +101,100 @@ body {
   background-color: var(--third-color);
   color: var(--second-color);
   padding: 5px 10px;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 700;
+}
+/* Feature Product Section */
+#product1 {
+  text-align: center;
+}
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid var(--third-color);
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0px;
+  transition: 0.2 ease;
+}
+.section-p1 h2 {
+  padding-top: 2rem;
+}
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+#product .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro .des {
+  text-align: center;
+  padding: 10px 0px;
+}
+#product1 .pro .des span {
+  color: var(--first-color);
+  font-size: 1rem;
+}
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: var(--third-color);
+  font-size: 1.1rem;
+}
+#product1 .pro .des a {
+  font-size: 1.3rem;
+  padding-top: 7px;
+  color: var(--first-color);
+}
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 10px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  color: var(--first-color);
+  font-weight: 500;
+}
+/* Banner Section */
+.banner {
+  margin: 40px 0px;
+}
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(/images/Logo.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+#banner h4 {
+  color: var(--second-color);
+  font-size: 1.2rem;
+}
+#banner h2 {
+  color: var(--second-color);
+  font-size: 1.5rem;
+  padding: 10px 0px;
+}
+#banner button:hover {
+  background-color: var(--second-color);
 }
