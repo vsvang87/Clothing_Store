@@ -17,22 +17,26 @@
     <section id="header" class="header">
       <a href="#"><img src="/images/Logo.JPG" alt="logo" class="logo" /></a>
       <div>
-        <!--Hamburger Menu Button-->
-        <a href="#" class="toggle-menu">
-          <span class="bars"></span>
-          <span class="bars"></span>
-          <span class="bars"></span>
-        </a>
+       
         <!--Nav-Links-->
-        <ul id="navbar" class="navbar">
+    </div>
+    
+        <ul id="navbar" class='navbar'>
           <li><a href="/index.html" class="active">Home</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#">Accessories</a></li>
           <li><a href="#">Hmong Clothes</a></li>
-          <li>
-            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
-          </li>
+          <li><a href="cart.html" id="lg-bag"><i class="fa fa-shopping-cart"></i></a></li>
+          <!--Close Button in Hamburger Menu-->
+          <a href="#" id="close"><i class="fa fa-times"></i></a>
         </ul>
+      </div>
+      <!--Hamburger Menu and Cart-->
+      <div id="mobile">
+        <a href="cart.html" id="cart"><i class="fa fa-shopping-cart"></i></a>
+        <i id="bar" class="fa fa-bars"></i>
+        
+          
       </div>
     </section>
     <!--Jumbotron-->
@@ -46,13 +50,13 @@
     <!--Product Feature Section-->
     <section id="product1" class="section-p1">
       <h2>Featured Products</h2>
-      <p>Shirts and Hoodies</p>
+      
       <div class="pro-container">
         <div class="pro">
           <img src="/images/jesuscrossgrayshirt.jpg" alt="men shirt">
           <div class="des">
             <span>Believe</span>
-            <h4>Cross men shirt</h4>
+            <h4>Men & Women</h4>
             <h5>$20</h5>
          
           </div>
@@ -62,7 +66,7 @@
           <img src="/images/proverbpeachcolorshirt.jpg" alt="women shirt">
           <div class="des">
             <span>Proverbs</span>
-            <h4>Pink T-Shirt</h4>
+            <h4>Men & Women</h4>
             <h5>$20</h5>
          
           </div>
@@ -72,7 +76,7 @@
           <img src="/images/navyblueshirt.jpg" alt="men shirt">
           <div class="des">
             <span>Hmong Logo</span>
-            <h4>Navy Blue Shirt
+            <h4>Men & Women
 
             </h4>
             <h5>$20</h5>
@@ -84,7 +88,7 @@
           <img src="/images/hoodie_autism.jpg" alt="autism hoodie">
           <div class="des">
             <span>Autism</span>
-            <h4>Gray Autism Hoodie</h4>
+            <h4>Men & Women</h4>
             <h5>$40</h5>
          
           </div>
@@ -94,7 +98,7 @@
           <img src="/images/Godisgreatershirt.jpg" alt="men shirt">
           <div class="des">
             <span>God is greater than your fears</span>
-            <h4>Men Shirt</h4>
+            <h4>Men & Shirt</h4>
             <h5>$20</h5>
          
           </div>
@@ -176,7 +180,7 @@
 <!--Mid Section-->
     <section id="banner" class="banner">
       
-      <h2>Hmong clothes, hats</h2><span>Neck wear & Earrings</span>
+      <h2>HMONG CLOTHES & HATS</h2><span><h4>NECK WEAR & EARRINGS</h4></span>
       
     </section>
     <!--Hmong Clothes, Hat, and acessories Section-->
@@ -274,6 +278,44 @@
         <span>The best prices out here</span>
       </div>
     </section>
+    <!--Footer-->
+    <footer class="section-p1">
+      <div class="footer-container">
+  <div class="col">
+        <img src="/images/Logo.jpg" alt="logo" class="logo">
+        <h4>Contact</h4>
+        <p><strong>Phone:</strong> 414-243-4862</p>
+        <p><strong>Email:</strong> vsvang@gmail.com</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        
+        <a href="#">About us</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact us</a>
+
+      </div>
+      <div class="col my-account">
+        <h4>My account</h4>
+        <a href="#">My Cart</a>
+      </div>
+      <div class="col install">
+        <h4>Secured Payment Gateways</h4>
+        <i class="fa fa-cc-visa"></i>
+        <i class="fa fa-cc-mastercard"></i>
+        <i class="fa fa-cc-discover"></i>
+      </div>
+      </div>
+    <div class="copyright">
+        <p>copyright@ 2022, Zoua Vang</p>
+      </div>
+    </footer>
     <script src="/js/index.js"></script>
   </body>
 </html>
