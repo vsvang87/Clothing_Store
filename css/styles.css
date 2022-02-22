@@ -24,8 +24,8 @@ button.normal {
   font-size: 14px;
   font-weight: 600;
   padding: 15px 30px;
-  color: var(--third-color);
-  background-color: var(--second-color);
+  color: var(--second-color);
+  background-color: var(--first-color);
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -60,8 +60,11 @@ button.normal {
   align-items: center;
   cursor: pointer;
 }
-#cart {
+#lg-bag {
   color: var(--third-color);
+}
+#lg-bag:hover {
+  color: var(--first-color);
 }
 #lg-bag {
   color: var(--third-color);
@@ -278,6 +281,11 @@ textarea {
     font-size: 1.1rem;
   }
 }
+@media (max-width: 460px) {
+  #form-details form {
+    width: 100%;
+  }
+}
 /* Footer */
 footer {
   background-color: var(--third-color);
@@ -416,6 +424,88 @@ p {
   cursor: pointer;
 }
 
+/* Cart */
+#cart {
+  overflow-x: auto;
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+#cart table img {
+  width: 70px;
+}
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(3) {
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+#cart table thead {
+  border: 1px solid var(--second-color);
+  border-left: none;
+  border-right: none;
+}
+#cart table thead td {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+#cart table tbody tr td {
+  padding: 15px 0;
+}
+#cart table tbody td {
+  font-size: 1.2rem;
+}
+
+/*Cart Checkout Total*/
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  align-items: flex-end;
+  padding: 30px;
+}
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#subtotal table td {
+  width: 50%;
+
+  padding: 10px 0;
+}
+#subtotal h3 {
+  font-weight: 700;
+  padding-bottom: 15px;
+}
 /* Media Query Tablet and Desktop */
 @media (max-width: 865px) {
   .section-p1 {
